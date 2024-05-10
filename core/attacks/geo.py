@@ -1,5 +1,5 @@
 import requests
-from settings import ADDR
+from settings import *
 
 class IPGeolocation(object):
     def __init__(self, ip_address):
@@ -29,4 +29,5 @@ class IPGeolocation(object):
 
 if __name__ == '__main__':
     geolocation = IPGeolocation('https://github.com/anouarbensaad/vulnx?tab=readme-ov-file')
+    # geolocation = IPGeolocation('https://github.com/anouarbensaad/vulnx?tab=readme-ov-file')
     print(geolocation.__dict__)

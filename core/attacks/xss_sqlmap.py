@@ -57,6 +57,6 @@ def scan_xss(url):
 if __name__ == "__main__":
     url = "http://127.0.0.1:8000"
     if scan_xss(url):
-        print("The website is XSS vulnerable")
+        print("The website is XSS or SQL map vulnerable")
     else:
-        print("The website is not XSS vulnerable")
+        print("The website is not XSS or SQL map vulnerable")

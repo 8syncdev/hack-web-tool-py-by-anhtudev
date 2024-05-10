@@ -20,6 +20,8 @@ class DDos(BaseAttacksMethods):
     @staticmethod
     def DDos(url: str, options: dict = {}) -> None:
         DDos.DDos_basic(url, options)
-        
 
+# DDos.number_request = 52   
+# ddos = DDos()
+# ddos.DDos_basic()
     
